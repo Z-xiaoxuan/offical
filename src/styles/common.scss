@@ -1,0 +1,58 @@
+/**
+ * 这个文件的主要作用：
+ *   1、去掉全局默认样式
+ *   2、公共样式
+ *   3、公共样式变量
+ */
+
+body {
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: PingFangSC-Medium, "PingFang SC";
+}
+.hidden-scrollbar {
+  scrollbar-width: none; /* 隐藏滚动条 Firefox */
+  -ms-overflow-style: none; /* 隐藏滚动条 IE/Edge */
+  overflow: -moz-scrollbars-none; /* 隐藏滚动条 Firefox (旧版本) */
+}
+
+/* Webkit浏览器，如Chrome和Safari */
+.hidden-scrollbar::-webkit-scrollbar {
+  width: 0.5em; /* 设置滚动条宽度为0.5em，如果需要可根据需要调整 */
+}
+.hidden-scrollbar::-webkit-scrollbar-track {
+  background: transparent; /* 滚动条轨道背景透明 */
+}
+.hidden-scrollbar::-webkit-scrollbar-thumb {
+  background: transparent; /* 滚动条滑块背景透明 */
+  border: none; /* 去掉滚动条滑块边框 */
+}
+.hidden-scrollbar::-webkit-scrollbar-button {
+  display: none; /* 隐藏滚动条按钮 */
+}
+
+/* 隐藏默认滚动条 */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* 滚动条滑块 */
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #3498db; /* 滑块背景颜色 */
+  border-radius: 4px; /* 滑块边角弧度，可以调整形状 */
+}
+
+/* 滚动条轨道 */
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1; /* 轨道背景颜色 */
+  border-radius: 4px; /* 轨道边角弧度，可以调整形状 */
+}
+
+/* 隐藏IE/Edge滚动条 */
+.custom-scrollbar {
+  scrollbar-width: thin; /* 隐藏滚动条 */
+}
