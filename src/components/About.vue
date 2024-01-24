@@ -12,7 +12,7 @@
         </div>
         <div class="right">
           <div class="img">
-            <img src="../assets/aboutus.jpg" style="width: 100%; border-radius: 20px" />
+            <img src="../assets/1.jpg" style="width: 100%; border-radius: 20px" />
           </div>
         </div>
       </div>

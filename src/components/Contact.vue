@@ -7,7 +7,7 @@
       <div style="display: flex; justify-content: center;">
         <div class="left">
           <div class="img">
-            <img src="../assets/contact.jpg" style="width: 100%; border-radius: 20px" />
+            <img src="../assets/1.jpg" style="width: 100%; border-radius: 20px" />
           </div>
         </div>
         <div class="right">
